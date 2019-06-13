@@ -51,7 +51,6 @@ int main(int argc, char** argv, char** envp)
                 case 0:
                 {
                     //child
-                    size_t i = 0;
                     execve(args[0], args, envp);
                     perror("execv");
                     exit(EXIT_FAILURE);
